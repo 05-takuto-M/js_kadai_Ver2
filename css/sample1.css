@@ -1,0 +1,311 @@
+
+
+.image01{
+    background-image: url(https://blog.moonrise-bali.com/wp/wp-content/uploads/2018/11/11961_large.jpg);
+    background-color:#d68d2f;
+    text-align: center;
+      }
+    
+.conte {
+      height: 100vh;
+      width:auto;
+      background-size: auto 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 470px;
+}
+
+.imagesize{
+    width: 1000px
+}
+
+
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+
+.html1{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 330px;
+    left: 270px;
+}
+.player{
+    text-align: center;
+    position: absolute;
+    top: 50px;
+}
+.player1{
+    width: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    color: indigo;
+}
+.vs{
+    color: red;
+    width: 100px;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+.teki{
+    justify-content: space-between;
+}
+
+.computer1-1{
+    text-align: center;
+    color: midnightblue;
+    font-weight: bold;
+}
+.computer1{
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 600px;
+}
+.computer2{
+    width: 100px;
+    position: absolute;
+    top: 110px;
+    left: 700px;
+}
+.computer3{
+    width: 100px;
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+.imgsize1{
+    width: 200px;
+}
+.imgsize2{
+    width: 100px;
+}
+.imgsize3{
+    width: 100px;
+}
+.imgsize4{
+    width: 100px;
+}
+.teki{
+    cursor: pointer;
+}
+
+
+.beji0 img{
+    width: 800px;
+    position: absolute;
+    top: 15px;
+    left: 320px;
+    z-index: 1;
+    display: none;
+}
+
+.beji1 img{
+    width: 800px;
+    position: absolute;
+    top: 50px;
+    left: 320px;
+    z-index: 2;
+    display: none;
+}
+.gokuu0 img{
+    width: 800px;
+    position: absolute;
+    top: 50px;
+    left: 320px;
+    z-index: 3;
+    display: none;
+}
+.gvsb img{
+    width: 500px;
+}
+.gvsb0{
+    display: block;
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 220px;
+    z-index: 4;
+}
+.gvsb{
+    display: flex;
+    
+}
+
+.gvss img{
+    width: 500px;
+}
+
+.gvss0{
+    display: block;
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 220px;
+    z-index: 4;
+}
+.gvss{
+    display: flex;
+    
+}
+
+.gif img{
+    display: block;
+    margin: auto;
+    width: 1000px;
+    position: absolute;
+    top: 5px;
+    left: 240px;
+    display: none;
+    z-index: 5;
+}
+
+.glast{
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    display: none;
+    z-index: 6;
+}
+.glast img{
+    width: 650px;
+}
+.glast ul{
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 0;
+    display:table;  /*定義*/
+    table-layout: fixed;
+    width: 25%;
+}
+.glast li{
+    list-style-type:none;
+    /* border: 1px solid #666; */
+    /* background-color: #FFF; */
+    display:table-cell;
+    cursor: pointer;
+}
+li:hover{
+    background: red;
+    color:#fff;
+}
+.c-button {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: black;
+    color: #fff;
+    width: 100px;
+    padding: 5px 16px;
+    font-size: 16px;
+  }
+
+.win{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+    top: 15px;
+    left: 550px;
+    z-index: 7;
+    display: none;
+  }
+
+.aiko{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    left: 480px;
+    z-index: 7;
+    display: none;
+}
+
+.make{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    left: 380px;
+    z-index: 7;
+    display: none;
+}
+
+.sell1-1{
+    display: block;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 430px;
+    z-index: 8;
+}
+
+.gif1 img{
+    display: block;
+    margin: auto;
+    width: 1000px;
+    position: absolute;
+    top: 5px;
+    left: 240px;
+    display: none;
+    z-index: 5;
+}
+.gif2 img{
+    display: block;
+    margin: auto;
+    width: 1000px;
+    position: absolute;
+    top: 5px;
+    left: 240px;
+    display: none;
+    z-index: 5;
+}
+.gif3 img{
+    display: block;
+    margin: auto;
+    width: 1440px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    display: none;
+    z-index: 5;
+}

@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image01{
+background-image: url(https://blog.moonrise-bali.com/wp/wp-content/uploads/2018/11/11961_large.jpg);
+background-color:#d68d2f;
+            /* じわっと画像が表示される */
+animation: fadeIn 5.0s ease 5.0s 1 normal;
+-webkit-animation: fadeIn 5.0s ease 0s 1 normal;
+text-align: center;
+  }
+
+@keyframes fadeIn { /*animation-nameで設定した値を書く*/
+0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+}
+
+
+
+.conte {
+  height: 100vh;
+  width:auto;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title1{
+    font-size: 200px;
+    color: black;
+    text-shadow:5px 5px 5px orange;
+    position: absolute;
+    top: 250px;
+    left: 115px;
+    animation: zoomIn 8.0s ease 8.0s 1 forwards;
+    -webkit-animation: zoomIn 8.0s ease 0s 1 forwards;
+    }
+
+@keyframes zoomIn {
+    0% {transform: scale(0.8);opacity: 0;}
+    100% {opacity: 1;transform: scale(1);}
+    }
+
+
+
+.styled {
+    position: absolute;
+    top: 600px;
+    left: 640px;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                    rgba(0, 0, 0, .2),
+                    rgba(0, 0, 0, .2) 30%,
+                    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    animation: zoomIn 8.0s ease 8.0s 1 forwards;
+    -webkit-animation: zoomIn 8.0s ease 0s 1 forwards;
+}
+
+.styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+@keyframes zoomIn {
+    0% {transform: scale(0.8);opacity: 0;}
+    100% {opacity: 1;transform: scale(1);}
+    }

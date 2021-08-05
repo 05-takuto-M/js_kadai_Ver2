@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sample1.css">
+  <title>対戦相手選択</title>
+</head>
+
+<body>
+  <section class="conte image01"></section>
+  <header>
+    <h1>悟空の対戦相手を選べ！</h1>
+  </header>
+
+  <main>
+    <section>
+      <div class="beji0">
+        <img src="imges/beji1-1.jpeg" alt="beji1-1">
+      </div>
+      <div class="beji1">
+        <img src="imges/beji1-2.png" alt="beji1-2">
+      </div>
+      <div class="gokuu0">
+        <img src="imges/gokuu1-1.jpeg" alt="gokuu1-1">
+      </div>
+      <div class="gvsb0">
+        <div class="gvsb">
+          <img src="imges/gokuu1-2.gif" alt="gokuu1-2">
+          <img src="imges/beji1-3.gif" alt="beji1-3">
+        </div>
+      </div>
+      <div>
+        <div class="gif">
+          <img src="imges/demo1.gif" alt="are?">
+        </div>
+      </div>
+      <div class="sell1-1">
+        <img src="imges/sell1-1.jpeg" alt="sell1-1">
+      </div>
+      <div class="gvss0">
+        <div class="gvss">
+          <img src="imges/gokuu1-2.gif" alt="gokuu1-2">
+          <img src="imges/sell1-2.gif" alt="sell1-2">
+        </div>
+      </div>
+      <div class="gif1">
+        <img src="imges/gohansell.gif" alt="gohanvssell">
+      </div>
+      <div class="gif2">
+        <img src="imges/gokuusellha.gif" alt="gokuuvssellha">
+      </div>
+      <div class="gif3">
+        <img src="imges/gokuubejiha.gif" alt="gokuuvsbejiha">
+      </div>
+      <div class="glast">
+        <img src="imges/gokuulast.gif" alt="gokuulast">
+        <ul>
+          <li><button class="c-button" id="gu_btn">グー</button></li>
+          <li><button class="c-button" id="cho_btn">チョキ</button></li>
+          <li><button class="c-button" id="par_btn">パー</button></li>
+        </ul>
+      </div>
+      <div class="win">
+        <p>オラの勝ちだ！！</p>
+        <img src="imges/gokuuwin.png" alt="勝利">
+      </div>
+      <div class="aiko">
+        <p>あいこじゃ♪あいこじゃ♪</p>
+        <img src="imges/aiko.gif" alt="あいこ">
+      </div>
+      <div class="make">
+        <p>あべしっ！！</p>
+        <img src="imges/gokuumake.gif" alt="負け">
+      </div>
+
+    </section>
+
+
+    <section class="html1">
+      <div class="player" style="display: block;">
+        <img class="imgsize1" src="imges/gokuu.jpeg" alt="悟空">
+        <p class="player1">Player</p>
+      </div>
+      <p class="vs">VS</p>
+      <div class="teki">
+        <div id="gu_btn" class="computer1" style="display: block;">
+          <img class="imgsize2" src="imges/beji.jpg" />
+          <p class="computer1-1">ベジータ</p>
+        </div>
+        <div id="cho_btn" class="computer2" style="display: block;">
+          <img class="imgsize3" src="imges/cell.jpeg" />
+          <p class="computer1-1">セル</p>
+        </div>
+        <div id="par_btn" class="computer3" style="display: block;">
+          <img class="imgsize4" src="imges/fureza.jpeg" />
+          <p class="computer1-1">フリーザ</p>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+
+
+    $(function () {
+      $('.imgsize2')
+        .click(function () {
+          $('.beji0 img').fadeIn(1000, function () {
+            $('.beji0 img').remove();
+            $('.beji1 img').fadeIn(1000, function () {
+              $('.beji1 img').remove();
+              $('.gokuu0 img').fadeIn(1000, function () {
+                $('.gokuu0 img').remove();
+                $('.gvsb0').fadeIn(1000, function () {
+                  $('.gvsb0').remove();
+                  $('.html1').remove();
+                  $('header').remove();
+                  $('.gif img').fadeTo("nomal", 1);
+                  setTimeout(function () {
+                    $('.gif img').remove();
+                    $('.gif3 img').fadeTo("nomal",1);
+                    setTimeout(function(){
+                      $('.gif3 img').remove();
+                      $('.glast').fadeTo("nomal", 1);
+                    },13000)
+                  }, 18000);//18000
+                })
+              });
+            })
+          });
+        });
+    });
+    $(function () {
+      $('.imgsize3')
+        .click(function () {
+          $('.sell1-1').fadeIn(1000, function () {
+            $('.sell1-1').remove();
+              $('.gokuu0 img').fadeIn(1000, function () {
+                $('.gokuu0 img').remove();
+                $('.gvss0').fadeIn(1000, function () {
+                  $('.gvss0').remove();
+                  $('.html1').remove();
+                  $('header').remove();
+                  $('.gif1 img').fadeTo("nomal", 1);
+                  setTimeout(function () {
+                    $('.gif1 img').remove();
+                    $('.glast').fadeTo("nomal", 1000);
+                  }, 16000);//18000
+                })
+              });
+            })
+          });
+        });
+    
+    // // グーの時の勝敗クリックイベント
+    $('#gu_btn').on('click', function () {
+      setTimeout(gu, 1000)
+    });
+    // チョキの時の勝敗クリックイベント
+    $('#cho_btn').on('click', function () {
+      setTimeout(cho, 1000)
+    });
+    // パーの時の勝敗クリックイベント
+    $('#par_btn').on('click', function () {
+      setTimeout(par, 1000)
+    });
+
+    // グー出した時の関数
+    function gu() {
+      const randomNumber = Math.ceil(Math.random() * 3);
+      if (randomNumber === 1) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.win').fadeTo("nomal", 1000);
+      } else if (randomNumber === 2) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.aiko').fadeTo("nomal", 1000);
+      } else if (randomNumber === 3) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.make').fadeTo("nomal", 1000);
+      }
+    }
+    // チョキ出した時の関数
+    function cho() {
+      const randomNumber = Math.ceil(Math.random() * 3);
+      if (randomNumber === 1) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.win').fadeTo("nomal", 1000);
+      } else if (randomNumber === 2) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.aiko').fadeTo("nomal", 1000);
+      } else if (randomNumber === 3) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.make').fadeTo("nomal", 1000);
+      }
+    }
+    // パー出した時の関数
+    function par() {
+      const randomNumber = Math.ceil(Math.random() * 3);
+      if (randomNumber === 1) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.win').fadeTo("nomal", 1000);
+      } else if (randomNumber === 2) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.aiko').fadeTo("nomal", 1000);
+      } else if (randomNumber === 3) {
+        $('.glast').remove();
+        $('.conte').remove();
+        $('.image01').remove();
+        $('.make').fadeTo("nomal", 1000);
+      }
+    }
+
+    // function par() {
+    //   const randomNumber = Math.ceil(Math.random() * 3);
+
+    //   if (randomNumber === 1) {
+    //     $('#result').text('負け');
+    //     $('#com_hand').text('チョキ');
+    //   } else if (randomNumber === 2) {
+    //     $('#result').text('勝ち');
+    //     $('#com_hand').text('グー');
+    //   } else if (randomNumber === 3) {
+    //     $('#result').text('あいこ');
+    //     $('#com_hand').text('パー');
+    //   }
+    // }
+
+    // function cho() {
+    //   const randomNumber = Math.ceil(Math.random() * 3);
+    //   if (randomNumber === 1) {
+    //     $('#result').text('あいこ');
+    //     $('#com_hand').text('チョキ');
+    //   } else if (randomNumber === 2) {
+    //     $('#result').text('負け');
+    //     $('#com_hand').text('グー');
+    //   } else if (randomNumber === 3) {
+    //     $('#result').text('勝ち');
+    //     $('#com_hand').text('パー');
+    //   }
+    // }
+    // $('#com_hand').text('チョキ');
+    //   } else if (randomNumber === 2) {
+    //     $('.glast').text('あいこ');
+    //     $('#com_hand').text('グー');
+    //   } else if (randomNumber === 3) {
+    //     $('.glast').text('負け');
+    //     $('#com_hand').text('パー');
+    //   }
+    // }
+
+
+
+
+
+
+// $(function() {
+//   //パネルを非表示
+//   $('.staff_bun').hide();
+//   $('.staff_name')
+//     .click(function(e){
+//  //クリックでパネルを開く
+//       $('+.staff_bun', this).slideToggle(500);
+//     })
+// });
+
+    // function imgwin1(img) {
+    //   window.open("imges/" + img, "imgwindow", "width=866,height=580");
+    // }
+    // function imgwin2(img) {
+    //   window.open("imges/" + img, "imgwindow", "width=866,height=580");
+    // }
+    // function imgwin3(img) {
+    //   window.open("imges/" + img, "imgwindow", "width=866,height=580");
+    // }
+
+  </script>
+
+</body>
+
+</html>
